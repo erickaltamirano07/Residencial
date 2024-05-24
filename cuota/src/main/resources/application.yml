@@ -1,0 +1,33 @@
+## Configuracion de Instancia
+server:
+  port: 8082
+  error:
+    include-stacktrace: on_param
+
+## Configuracion del cliente de Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+    hostname: ms-cuota
+
+## Configuracion de Spring
+spring:
+  application:
+    name: ms-cuota
+  datasource:
+    url: jdbc:postgresql://localhost:5432/residencia
+    username: postgres
+    password: 1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
+
+
+## Configuracion secundaria (custom)
+getPropietario:
+  url: http://ms-propietario/propietario/%s

@@ -1,0 +1,47 @@
+## Configuracion de Instancia
+server:
+  port: 8087
+  error:
+    include-stacktrace: on_param
+
+## Configuracion del cliente de Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+    hostname: ms-notificacion
+
+## Configuracion de Spring
+spring:
+  mail:
+    default-encoding: UTF-8
+    host: smtp.gmail.com
+    port: 587
+    username: conjuntobanalcazar@gmail.com
+    password: bsoykrtsfwetudpq
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+      protocol: smtp
+      test-connection: false
+
+
+
+
+  application:
+    name: ms-notificacion
+  datasource:
+    url: jdbc:postgresql://localhost:5432/residencia
+    username: postgres
+    password: 1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
+

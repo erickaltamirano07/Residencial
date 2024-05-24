@@ -1,0 +1,39 @@
+## Configuracion de Instancia
+server:
+  port: 8086
+  error:
+    include-stacktrace: on_param
+
+## Configuracion del cliente de Eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: ${EUREKA_URL:http://localhost:8761/eureka}
+  instance:
+    preferIpAddress: true
+    hostname: ms-gasto
+
+## Configuracion de Spring
+spring:
+  application:
+    name: ms-gasto
+  datasource:
+    url: jdbc:postgresql://localhost:5432/residencia
+    username: postgres
+    password: 1234
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    defer-datasource-initialization: true
+
+
+## Configuracion secundaria (custom)
+getEmpleado:
+  url: http://ms-empleado/empleado/%s
+
+getPresupuesto:
+  url: http://ms-presupuesto/presupuesto?anio=%s
+
+putPresupuesto:
+  url: http://ms-presupuesto/presupuesto/%s

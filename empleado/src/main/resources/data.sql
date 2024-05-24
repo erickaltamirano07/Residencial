@@ -1,0 +1,10 @@
+insert into empleado (nombre, apellido, cargo, salario) values ('Chaddie', 'Rantoull', 'Marketing Manager', 925);
+insert into empleado (nombre, apellido, cargo, salario) values ('Shannan', 'Borrill', 'Sales Associate', 922);
+insert into empleado (nombre, apellido, cargo, salario) values ('Guido', 'Kersaw', 'Engineer III', 887);
+insert into empleado (nombre, apellido, cargo, salario) values ('Frederic', 'Crummie', 'Internal Auditor', 874);
+insert into empleado (nombre, apellido, cargo, salario) values ('Lila', 'Goom', 'Design Engineer', 814);
+insert into empleado (nombre, apellido, cargo, salario) values ('Symon', 'Filochov', 'Electrical Engineer', 841);
+insert into empleado (nombre, apellido, cargo, salario) values ('Korie', 'Gepheart', 'Operator', 917);
+insert into empleado (nombre, apellido, cargo, salario) values ('Byron', 'Anglish', 'Tax Accountant', 836);
+insert into empleado (nombre, apellido, cargo, salario) values ('Clifford', 'Minillo', 'VP Sales', 925);
+insert into empleado (nombre, apellido, cargo, salario) values ('Sheilakathryn', 'Spurnier', 'Web Developer I', 862);
