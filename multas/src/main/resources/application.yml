@@ -18,7 +18,7 @@ spring:
   application:
     name: ms-multa
   datasource:
-    url: jdbc:postgresql://localhost:5432/microservice
+    url: jdbc:postgresql://localhost:5432/residencia
     username: postgres
     password: 1234
   jpa:
